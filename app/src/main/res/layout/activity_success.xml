@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:orientation="vertical"
+             android:background="@drawable/librarybook"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUCEESSFULLY LOGGED IN/REGISTERED"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="10pt"
+        android:paddingBottom="@dimen/activity_horizontal_margin"/>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gotobooklist"
+        android:text="Books"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/notification_show_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show App Notification" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/notification_clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear App Notification"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Issued Books"
+        android:id="@+id/IssuedBooks"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/log_out_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"/>
+
+
+</LinearLayout>

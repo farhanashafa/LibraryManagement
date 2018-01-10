@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/librarybook"
+    tools:context="com.example.rumaly.project1.signup">
+
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : "
+            android:textStyle="bold"
+            android:textColor="#F5F5F5"
+            android:textSize="10pt"/>
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="#000000"
+             android:id="@+id/name"
+             android:textCursorDrawable="@null"/>
+
+         <TextView
+             android:layout_marginTop="@dimen/activity_horizontal_margin"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Email : "
+             android:textStyle="bold"
+             android:textColor="#F5F5F5"
+             android:textSize="10pt"/>
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="#000000"
+             android:id="@+id/email"
+             android:textCursorDrawable="@null"/>
+         <TextView
+             android:layout_marginTop="@dimen/activity_horizontal_margin"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Password : "
+             android:textStyle="bold"
+             android:textColor="#F5F5F5"
+             android:textSize="10pt"/>
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textPassword"
+             android:textColor="#000000"
+             android:id="@+id/password"
+             android:textCursorDrawable="@null"/>
+
+
+         <TextView
+             android:layout_marginTop="@dimen/activity_horizontal_margin"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Phone : "
+             android:textStyle="bold"
+             android:textColor="#F5F5F5"
+             android:textSize="10pt"/>
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="#000000"
+             android:id="@+id/phone"/>
+       <TextView
+           android:layout_marginTop="@dimen/activity_horizontal_margin"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Enter Your Designation "
+           android:textStyle="bold"
+           android:textColor="#F5F5F5"
+           android:textSize="10pt"/>
+
+       <Spinner
+           android:id="@+id/designation"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:color="#F5F5DC"
+           android:background="@android:drawable/btn_dropdown"
+           android:spinnerMode="dropdown" />
+
+         <Button
+             android:text="Submit"
+             android:onClick="btnRegistration_Click"
+             android:layout_gravity="bottom"
+             android:gravity="center"
+             android:layout_marginLeft="@dimen/activity_vertical_margin"
+             android:layout_marginRight="@dimen/activity_vertical_margin"
+             android:layout_width="match_parent"
+             android:layout_marginTop="@dimen/activity_horizontal_margin"
+             android:layout_height="100px"
+             android:textStyle="bold"
+             android:textColor="#000000"
+             />
+      </LinearLayout>
+     </ScrollView>
+
+ </LinearLayout>
+
+ <LinearLayout
+     android:gravity="center"
+     android:layout_centerInParent="true"
+     android:orientation="vertical"
+     android:id="@+id/linear"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+ </LinearLayout>
+</RelativeLayout>
